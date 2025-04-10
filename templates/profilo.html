@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Questo è il tuo profilo</h1>
+    <form method="post">
+        <label>Nome: {{ dati['Nome'] }} </label><br><br>
+
+        <label>Cognome: {{ dati['Cognome'] }}" </label><br><br>
+
+        <label>Scuola: {{ dati['Scuola'] }} </label><br><br>
+
+        <label>Hobby: {{ dati['Hobby'] }} </label><br><br>
+        <button type="submit">Salva</button>
+    </form>
+    <br>
+    <a href="{{ url_for('modifica') }}">Modifica il profilo</a>
+</body>
+</html>
